@@ -33,6 +33,7 @@ $(document).ready(function() {
 			document.body.style.overflow = 'auto';
 		}
 	});
+	
 
 	function ibg(){
 		$.each($('.ibg'), function(index, val) {
