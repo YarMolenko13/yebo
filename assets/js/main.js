@@ -28,6 +28,7 @@ $(document).ready(function() {
 		if($('.menu-icon').classes()[1] == 'active') {
 			document.body.style.overflow = 'hidden';
 			$(document).scrollTop(0)
+			$(document).bind('touchmove', false);
 		} else {
 			document.body.style.overflow = 'auto';
 		}
