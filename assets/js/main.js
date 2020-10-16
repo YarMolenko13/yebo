@@ -46,7 +46,7 @@ $(document).ready(function() {
 	});
 
 	$('.menu-icon').on('touchstart click', function(event) {
-		if($('.menu-icon').classes()[1] == 'active') {
+		if($('.menu-icon').classes()[2] == 'active') {
 			document.body.style.overflow = 'hidden';
 			document.body.style.postition = 'hidden';
 			$(document).scrollTop(0);
