@@ -167,6 +167,10 @@ body.active {
   overflow: hidden;
 }
 
+body {
+  overflow: hidden;
+}
+
 .page {
   position: absolute;
   width: 100%;

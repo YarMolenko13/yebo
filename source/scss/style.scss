@@ -50,6 +50,10 @@ $ff: "Lato";
 }
 
 // ОСНОВНОЙ БЛОК
+body.active{
+	position: fixed;
+	overflow: hidden;
+}
 .page{
 	position: absolute;
 	width: 100%;

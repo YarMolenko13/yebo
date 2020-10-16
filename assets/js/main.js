@@ -36,18 +36,13 @@ $(document).ready(function() {
 	// 	}
 	// });
 
-	$('.menu-icon').on('touchstart click', function(event) {
-		$('.menu-icon, .menu-body').toggleClass('active')
-		let classArr = $('.menu-icon').classes()
+	$('.menu-icon').on('touchstart', function(event) {
+		$('.menu-icon, .menu-body, body').toggleClass('active')
 
-		if ($('.menu-icon').classes().includes('active')) {
-			document.body.style.overflow = 'hidden';
-			$(document).scrollTop(0);
-			console.log('asdf')
-		} else {
-			document.body.style.overflow = 'auto';
-		}
 	});
+
+
+
 
 	function ibg(){
 		$.each($('.ibg'), function(index, val) {
