@@ -22,35 +22,28 @@
 })(jQuery);
 
 $(document).ready(function() {
-	$('.menu-icon').click(function(event) {
-		$('.menu-icon, .menu-body').toggleClass('active')
-		if($('.menu-icon').classes()[1] == 'active') {
-			document.body.style.overflow = 'hidden';
-			$(document).scrollTop(0);
-		} else {
-			document.body.style.overflow = 'auto';
-		}
-	});
 
-	$('.menu-icon').click(function(event) {
-		if($('.menu-icon').classes()[1] == 'active') {
-			document.body.style.overflow = 'hidden';
-			document.body.style.postition = 'hidden';
-			$(document).scrollTop(0);
-			$(window).scroll(function(){
-        		$('body').scrollTop(0);
-			});
-		} else {
-			document.body.style.overflow = 'auto';
-		}
-	});
+	// $('.menu-icon').click(function(event) {
+	// 	$('.menu-icon, .menu-body').toggleClass('active')
+	// 	let classArr = $('.menu-icon').classes()
+
+	// 	if ($('.menu-icon').classes().includes('active')) {
+	// 		document.body.style.overflow = 'hidden';
+	// 		$(document).scrollTop(0);
+	// 		console.log('asdf')
+	// 	} else {
+	// 		document.body.style.overflow = 'auto';
+	// 	}
+	// });
 
 	$('.menu-icon').on('touchstart click', function(event) {
-		if($('.menu-icon').classes()[2] == 'active') {
+		$('.menu-icon, .menu-body').toggleClass('active')
+		let classArr = $('.menu-icon').classes()
+
+		if ($('.menu-icon').classes().includes('active')) {
 			document.body.style.overflow = 'hidden';
-			document.body.style.postition = 'hidden';
 			$(document).scrollTop(0);
-			console.log('12')
+			console.log('asdf')
 		} else {
 			document.body.style.overflow = 'auto';
 		}
