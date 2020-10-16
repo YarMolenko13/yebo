@@ -35,12 +35,26 @@ $(document).ready(function() {
 	$('.menu-icon').click(function(event) {
 		if($('.menu-icon').classes()[1] == 'active') {
 			document.body.style.overflow = 'hidden';
+			document.body.style.postition = 'hidden';
 			$(document).scrollTop(0);
+			$(window).scroll(function(){
+        		$('body').scrollTop(0);
+			});
 		} else {
 			document.body.style.overflow = 'auto';
 		}
 	});
 
+	$('.menu-icon').on('touchstart click', function(event) {
+		if($('.menu-icon').classes()[1] == 'active') {
+			document.body.style.overflow = 'hidden';
+			document.body.style.postition = 'hidden';
+			$(document).scrollTop(0);
+			console.log('12')
+		} else {
+			document.body.style.overflow = 'auto';
+		}
+	});
 
 	function ibg(){
 		$.each($('.ibg'), function(index, val) {
