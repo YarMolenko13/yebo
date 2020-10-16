@@ -24,16 +24,23 @@
 $(document).ready(function() {
 	$('.menu-icon').click(function(event) {
 		$('.menu-icon, .menu-body').toggleClass('active')
-
 		if($('.menu-icon').classes()[1] == 'active') {
 			document.body.style.overflow = 'hidden';
-			$(document).scrollTop(0)
-			$(document).bind('touchmove', false);
+			$(document).scrollTop(0);
 		} else {
 			document.body.style.overflow = 'auto';
 		}
 	});
-	
+
+	$('.menu-icon').click(function(event) {
+		if($('.menu-icon').classes()[1] == 'active') {
+			document.body.style.overflow = 'hidden';
+			$(document).scrollTop(0);
+		} else {
+			document.body.style.overflow = 'auto';
+		}
+	});
+
 
 	function ibg(){
 		$.each($('.ibg'), function(index, val) {
@@ -67,3 +74,4 @@ $(document).ready(function() {
 		});
 	}
 })
+
